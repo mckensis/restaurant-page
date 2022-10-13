@@ -17,7 +17,7 @@ function itemOne() {
 
     itemOneName.textContent = "One";
     itemOnePrice.textContent = "£8";
-    itemOneInfo.textContent = "lentil dal";
+    itemOneInfo.textContent = "tadka dal";
     
     itemOneDiv.classList.add("item");
 
@@ -56,7 +56,7 @@ function itemThree() {
 
     itemThreeName.textContent = "Three";
     itemThreePrice.textContent = "£12";
-    itemThreeInfo.textContent = "double chapati with double topping"
+    itemThreeInfo.textContent = "double chapati with double toppings"
     
     itemThreeDiv.classList.add("item");
     itemThreeDiv.appendChild(itemThreeName);
