@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "headingFont";
+    src: url("./Hidayatullah.woff2") format("woff2"),
+         url(".//Hidayatullah.woff") format("woff");
+}
+
+:root {
+    --black: #0E0F19;
+    --yellow: #E0CA3C;
+    --white: #DCD6F7;
+    --blue: #2274A5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+div.content {
+    display: grid;
+}
+
+/* Top Nav Bar styles */
+div.nav {
+    display: grid;
+    grid-template-rows: max-content 100px;
+}
+div.nav ul.navbar {
+    display: grid;
+    place-self: center;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--black);
+    gap: 5rem;
+    width: 80vw;
+    padding: 1.5rem;
+    border: 3px solid var(--yellow);
+    border-radius: 1rem;
+}
+div.nav h1 {
+    place-self: flex-start;
+    font-family: "headingFont";
+    font-size: 4rem;
+    color: var(--yellow);
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+div.nav ul.navbar li {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+/* Active tab heading styles */
+div.nav ul.navbar li.active {
+    border-radius: 1rem;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+/* Styles to keep each tab looking similar */
+div.home,
+div.contact,
+div.menu {
+    display: grid;
+    width: 80vw;
+    place-content: center;
+    place-items: center;
+    background-color: var(--black);
+    text-align: center;
+    border: 3px solid var(--yellow);
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    place-self: center;
+    margin-bottom: 2rem;
+    padding: 3rem 5rem;
+}
+
+/* Menu tab styles */
+div.menu .menuInfo {
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 3rem;
+    border: 3px solid var(--yellow);
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    background-color: var(--black);
+}
+div.menu div.item {
+    display: grid;
+    grid-template-rows: 2rem 1.7rem;
+    grid-template-columns: 1fr 100px;
+    place-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+/*  Menu Item Name */
+div.menu div.item h4 {
+    justify-self: left;
+}
+/* Menu Item Price */
+div.menu div.item p {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    font-size: 2rem;
+    place-self: center;
+    justify-self: right;
+}
+/* Menu Item Info */
+div.menu div.item span {
+    margin-left: 0.5rem;
+    justify-self: left;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+/* Home tab styles */
+div.home img {
+    justify-self: center;
+}
+div.home p {
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Contact tab styles */
+div.contact ul.contact {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+div.contact ul.contact div {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 3rem;
+    place-content: center;
+    place-items: center;
+}
