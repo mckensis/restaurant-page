@@ -19,7 +19,7 @@
 body {
     background-color: var(--black);
     color: var(--white);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 div.content {
     display: grid;
